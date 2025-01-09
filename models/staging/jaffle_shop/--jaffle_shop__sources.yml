@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: jaffle_shop
+    database: Serverlessdb  
+    schema: dbo 
+    tables:
+      - name: jaffle_shop_orders
+      - name: jaffle_shop_customers
+
+  - name: stripe
+    tables:
+      - name: stripe_payments
